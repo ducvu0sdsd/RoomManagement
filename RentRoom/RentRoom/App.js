@@ -11,7 +11,7 @@ export default function App() {
 
   return (
     <NavigationContainer>
-      <View style={{position : 'relative', height : '100%', width : '100%'}}>
+      <View style={{position : 'relative', width : '100%', flex : 1}}>
         <Stack.Navigator initialRouteName="Home">
           {routeList.map((route, index) => (
             <Stack.Screen key={index} name={route.name} component={route.component} options={{ headerShown: false }} />

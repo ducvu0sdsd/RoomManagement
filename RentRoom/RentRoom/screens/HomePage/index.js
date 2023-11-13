@@ -18,8 +18,8 @@ const HomePage = () => {
   };
 
   return (
-    <View>
-      <ImageBackground source={require('./images/background_title.jpg')} style={{ width: '100%', height: 210 }}>
+    <View style={{backgroundColor : 'white', height : '100%'}}>
+      <ImageBackground source={require('./images/background_title.jpg')} style={{ width: '100%', height: 210, zIndex : 1 }}>
         <Text style={styles.title}>{title}</Text>
         <View style={styles.info_user}>
           <Image style={styles.avatar} source={require('./images/tienduc.jpg')} />
